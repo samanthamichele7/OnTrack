@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Roller Derby Skills Test App</title>
+		<link rel="stylesheet" href="themes/derby.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" /> 
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+		
+
+	</head>
+	<body>
+		<div data-role="page" data-theme="a">
+			<div data-role="header" data-position="inline">
+				<h1>Roller Derby Skills Test</h1>
+			</div>
+
+			<div data-role="content" data-theme="a">
+				<h2>Endurance</h2>
+				<p>You must skate 25 laps in 5 minutes to pass the skills test.  Record your progress here.</p>
+		
+					<label for="mydate">Date:</label>
+
+						<input name="mydate" id="mydate" type="date" data-role="datebox"
+   								data-options='{"mode": "calbox"}' data-inline="true">
+				
+
+					<form>
+  					 <label for="slider-number">Number of laps:</label>
+   						<input type="range" name="slider-number" id="slider-number" value="20" min="0" max="35" step="0.5"  />
+					</form>
+
+					<form>
+   					<label for="slider-time">Time</label>
+   						<input type="range" name="slider-time" id="slider-time" value="3" min="1" max="10" step="0.5" />
+					</form>
+
+					<div class="center-button">
+					<a href="#" data-role="button" data-inline="true">Record Laps</a>
+					<a href="#" data-role="button" data-inline="true">View History</a>
+					</div>
+				</div>
+
+			<div data-role="footer" data-theme="a" class="center-button">
+				<a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="pop">Home</a>
+			</div>
+		</div>
+	</body>
+</html>
