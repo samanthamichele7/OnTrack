@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<div data-role="page" data-theme="a">
-			<div id="logoheader"><img src="images/Icon2.png" /></div>
+			<div id="logoheader"><a href="menu.html"><img src="images/Icon2.png" /></a></div>
 
 			<div data-role="content" data-theme="a" id="pagecontent">
 				<div id="maincontent">
@@ -46,9 +46,15 @@
 				</div>
                 </div>
 
-			<div data-role="footer" data-theme="a" class="center-button">
-				<a href="menu.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="pop">Home</a>
-			</div>
+			<div data-role="footer" data-theme="a" data-position="fixed">		
+	<div data-role="navbar">
+		<ul>
+			<li><a href="rules.html">Rules</a></li>
+			<li><a href="skills.html">Skills</a></li>
+			<li class="ui-disabled"><a href="endurance.html">Endurance</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
 		</div>
 	</body>
 </html>
