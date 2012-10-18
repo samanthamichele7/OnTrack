@@ -11,23 +11,25 @@
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 	</head>
-	<body>
+<body>
 		        
     <div data-role="page" id="welcome" data-theme="a">
     
+		<a href="menu.html"><div id="logoheader"><div id="iconstrip"></div></div></a><!--places logo and strip at top and links to menu.html-->
 		<div data-role="header" data-position="inline">
-			</div>
-			<div data-role="content" data-theme="a">
-            <div id="maincontent">
-            <div id="rollergirlimg"><img src="images/rollergirl.png" /></div>
-            <a href="menu.html"><div id="logoheader"><div id="iconstrip"></div></div></a>
-			<div id="navitems"><p>What do you want to do today?</p>
-			  <a href="rules.html" data-role="button" data-mini="true" data-icon="arrow-r">Rules Test</a>
-              <a href="skills.html" data-role="button" data-mini="true" data-icon="arrow-r">Skills Test</a>
-              <a href="endurance.html" data-role="button" data-mini="true" data-icon="arrow-r">Endurance Test</a>
-              </div>
-            </div>
-            </div>
-		</div>
-        </body>
-        </html>
+        </div><!--end of header -->
+			
+        <div data-role="content" data-theme="a">
+        	<div id="maincontent">
+        		<div id="rollergirlimg"><img src="images/rollergirl.png" /></div><!--end of rollergirl-->
+        		<div id="navitems"><p>What do you want to do today?</p>
+                    <a href="rules.html" data-role="button" data-mini="true" data-icon="arrow-r">Rules Test</a>
+                    <a href="skills.html" data-role="button" data-mini="true" data-icon="arrow-r">Skills Test</a>
+                    <a href="endurance.html" data-role="button" data-mini="true" data-icon="arrow-r">Endurance Test</a>
+          		</div><!--end of navitems-->
+        	</div><!--end of maincontent-->
+        </div><!--end of content-->
+        
+    </div><!--end of page-->
+</body>
+</html>

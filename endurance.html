@@ -14,47 +14,47 @@
 		
 
 	</head>
-	<body>
-		<div data-role="page" data-theme="a">
-			<a href="menu.html"><div id="logoheader"><div id="iconstrip"></div></div></a>
+<body>
+	<div data-role="page" data-theme="a">
+		<a href="menu.html"><div id="logoheader"><div id="iconstrip"></div></div></a>
+		<div data-role="header" data-position="inline">
+		</div><!--end of header -->
+        
+        <div data-role="content" data-theme="a" id="pagecontent"><!--container with transparent grey background-->
+            <h2>Endurance</h2>
+            <p>You must skate 25 laps in 5 minutes to pass the skills test.  Record your progress here.</p>
+    
+                <label for="mydate">Date:</label>
 
-			<div data-role="content" data-theme="a" id="pagecontent">
-				<div id="maincontent">
-				<h2>Endurance</h2>
-				<p>You must skate 25 laps in 5 minutes to pass the skills test.  Record your progress here.</p>
-		
-					<label for="mydate">Date:</label>
+                    <input name="mydate" id="mydate" type="date" data-role="datebox"
+                            data-options='{"mode": "calbox"}' data-inline="true">
+            
 
-						<input name="mydate" id="mydate" type="date" data-role="datebox"
-   								data-options='{"mode": "calbox"}' data-inline="true">
-				
+                <form>
+                 <label for="slider-number">Number of laps:</label>
+                    <input type="range" name="slider-number" id="slider-number" value="20" min="0" max="35" step="0.5"  />
+                </form>
 
-					<form>
-  					 <label for="slider-number">Number of laps:</label>
-   						<input type="range" name="slider-number" id="slider-number" value="20" min="0" max="35" step="0.5"  />
-					</form>
+                <form>
+                <label for="slider-time">Time</label>
+                    <input type="range" name="slider-time" id="slider-time" value="3" min="1" max="10" step="0.5" />
+                </form>
 
-					<form>
-   					<label for="slider-time">Time</label>
-   						<input type="range" name="slider-time" id="slider-time" value="3" min="1" max="10" step="0.5" />
-					</form>
+            <div class="center-button">
+                <a href="#" data-role="button" data-inline="true">Record Laps</a>
+                <a href="#" data-role="button" data-inline="true">View History</a>
+            </div><!--center-button-->
+        </div><!--content / pagecontent-->
 
-					<div class="center-button">
-					<a href="#" data-role="button" data-inline="true">Record Laps</a>
-					<a href="#" data-role="button" data-inline="true">View History</a>
-					</div>
-				</div>
-                </div>
-
-			<div data-role="footer" data-theme="a" data-position="fixed">		
-	<div data-role="navbar">
-		<ul>
-			<li><a href="rules.html">Rules</a></li>
-			<li><a href="skills.html">Skills</a></li>
-			<li class="ui-disabled"><a href="endurance.html">Endurance</a></li>
-		</ul>
-	</div><!-- /navbar -->
-</div><!-- /footer -->
-		</div>
-	</body>
+		<div data-role="footer" data-theme="a" data-position="fixed">		
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li class="ui-disabled"><a href="endurance.html">Endurance</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+	</div><!--end of page-->
+</body>
 </html>

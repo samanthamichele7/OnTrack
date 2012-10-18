@@ -9,58 +9,58 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" /> 
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-		
-
 	</head>
-	<body>
-		<div data-role="page" data-theme="a">
-			<div data-role="header" data-position="inline">
-			</div>
+<body>
+	
+    <div data-role="page" data-theme="a">
+		<a href="menu.html"><div id="logoheader"><div id="iconstrip"></div></div></a><!--places logo and strip at top and links to menu.html-->
+		<div data-role="header" data-position="inline">
+		</div><!--end of header -->
 
-			<div data-role="content" data-theme="a" id="pagecontent">
-				<div id="logoheader"><a href="menu.html"><img src="images/Icon2.png" /></a></div>
-				<h2>Skills List</h2>
-				<p>In order to pass the skills test, you must be able to perform all of these skills.</p>
+        <div data-role="content" data-theme="a" id="pagecontent"><!--container with transparent grey background-->
+        
+            <h2>Skills List</h2>
+            <p>In order to pass the skills test, you must be able to perform all of these skills.</p>
 
-				<ul data-role="listview" data-filter="true" >
+                <ul data-role="listview" data-filter="true" >
+    
+                    <div  data-mini="true" data-theme="a" data-inline="true">
+                        <ul data-role="list-divider" data-theme="a">Basic Skating Skills	
+                            <li><label><input type="checkbox" name="checkbox-0" /> Crossovers </label></li>
+                            <li><label><input type="checkbox" name="checkbox-1" /> T-Stop </label></li>
+                            <li><label><input type="checkbox" name="checkbox-2" /> One-foot glides down straightaways </label></li>
+                            <li><label><input type="checkbox" name="checkbox-3" /> Derby Stance </label></li>
+                        </ul>
+                    </div><!--first listview-->
+        
+                    <div  data-mini="true" data-theme="a" >
+                        <ul data-role="list-divider" data-theme="a">Falls
+                            <li><label><input type="checkbox" name="checkbox-4" /> Single Knee Falls </label></li>
+                            <li><label><input type="checkbox" name="checkbox-5" /> Double Knee Falls </label></li>
+                            <li><label><input type="checkbox" name="checkbox-6" /> Figure 4 / Baseball Slide </label></li>
+                            <li><label><input type="checkbox" name="checkbox-7" /> 180 Degree Turn Single Knee Fall </label></li>
+                            <li><label><input type="checkbox" name="checkbox-8" /> Four Point Fall</label></li>
+                        </ul>
+                    </div><!--second listview-->
+                    
+                </ul><!--end of listview-->
 
-				<div  data-mini="true" data-theme="a" data-inline="true">
-					<ul data-role="list-divider" data-theme="a">Basic Skating Skills	
-						<li><label><input type="checkbox" name="checkbox-0" /> Crossovers </label></li>
-						<li><label><input type="checkbox" name="checkbox-1" /> T-Stop </label></li>
-						<li><label><input type="checkbox" name="checkbox-2" /> One-foot glides down straightaways </label></li>
-						<li><label><input type="checkbox" name="checkbox-3" /> Derby Stance </label></li>
-					</ul>
-				</div>
+            <div class="center-button">
+                <a href="#" data-role="button" data-inline="true">Save</a>
+                <a href="#" data-role="button" data-inline="true">Reset</a>
+                </div>
 
-				<div  data-mini="true" data-theme="a" >
-					<ul data-role="list-divider" data-theme="a">Falls
-						<li><label><input type="checkbox" name="checkbox-4" /> Single Knee Falls </label></li>
-						<li><label><input type="checkbox" name="checkbox-5" /> Double Knee Falls </label></li>
-						<li><label><input type="checkbox" name="checkbox-6" /> Figure 4 / Baseball Slide </label></li>
-						<li><label><input type="checkbox" name="checkbox-7" /> 180 Degree Turn Single Knee Fall </label></li>
-						<li><label><input type="checkbox" name="checkbox-8" /> Four Point Fall</label></li>
-					</ul>
-				</div>
+		</div><!--end of pagecontent-->
 
-				</ul>
-
-				<div class="center-button">
-					<a href="#" data-role="button" data-inline="true">Save</a>
-					<a href="#" data-role="button" data-inline="true">Reset</a>
-					</div>
-
-			</div>
-
-			<div data-role="footer" data-theme="a" data-position="fixed">		
-	<div data-role="navbar">
-		<ul>
-			<li><a href="rules.html">Rules</a></li>
-			<li class="ui-disabled"><a href="skills.html">Skills</a></li>
-			<li><a href="endurance.html">Endurance</a></li>
-		</ul>
-	</div><!-- /navbar -->
-</div><!-- /footer -->
-        </div>
-	</body>
+		<div data-role="footer" data-theme="a" data-position="fixed">		
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li class="ui-disabled"><a href="skills.html">Skills</a></li>
+                    <li><a href="endurance.html">Endurance</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+	</div><!--end of page-->
+</body>
 </html>
