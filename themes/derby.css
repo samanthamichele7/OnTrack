@@ -40,11 +40,12 @@ ul {
 }
 
 #iconstrip {
-	position:relative;
-	top:0px;
+	position:fixed;
+	top:-25px;
 	height:75px;
-	left:300px;
-	backgrond-size: 11px 75px;
+	left:275px;
+	width:100%;
+	background-size: 11px 75px;
 	z-index:500;
 	background-image:url(../images/Iconstrip.png);
 }
@@ -109,9 +110,8 @@ ul {
 		top:60px;
 		/*left:10px;*/
 			min-width:240px;
-		margin: 30px auto 80px;
+		margin: 0px auto 80px;
 		padding: -40px 15px;
-		border-top:-50px;
 		width: 80%;
 		-moz-border-radius:10px;
 		-webkit-border-radius:10px;
@@ -146,7 +146,7 @@ ul {
 	
 	#rollergirlimg {
 	position:fixed;
-	top:45px;
+	top:50px;
 	left:200px;
 	}
 	
@@ -188,7 +188,6 @@ ul {
 	width: 80%;
 	margin: 10px auto 100px;
 	padding: -30px 30px;
-	border-top:-50px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
