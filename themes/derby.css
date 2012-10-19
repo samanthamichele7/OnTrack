@@ -26,10 +26,11 @@ ul {
 	position:fixed;
 	top:-25px;
 	left:-25px;
-	width:300px;
+	width:270px;
 	height:109px;
 	z-index:500;
 	background-image:url(../images/Icon2.png);
+	background-repeat:no-repeat;
 	/*-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
@@ -43,11 +44,28 @@ ul {
 	position:fixed;
 	top:-25px;
 	height:75px;
-	left:275px;
+	left:245px;
 	width:100%;
 	background-size: 11px 75px;
-	z-index:500;
+	z-index:499;
 	background-image:url(../images/logostrip.png);
+}
+
+#topheadericon {
+	position:fixed;
+	right:5px;
+	top: 5px;
+	z-index:500;
+	font-size:9px;
+	
+}
+
+#topheadericon a {
+	color:#eee;
+	text-decoration:none;
+	z-index:500;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:13px;
 }
 	
 
@@ -64,22 +82,13 @@ ul {
 	#welcometext {
 		position:fixed;
 		top:135px;
-	}
-	
-	#welcometext img {
-		height:auto;
-		width:39%;
+		left:20px;
 	}
 		
 	#rollergirlimg {
 		position:absolute;
-		top:60px;
+		top:55px;
 		right:0px;
-	}
-	
-	#rollergirlimg img {
-		height:auto;
-		width:100%;
 	}
 	
 	#freshmeattxt {
@@ -97,7 +106,7 @@ ul {
 	#navitems {
 		position:fixed;
 		top:135px;
-		left:20px;
+		left:10px;
 		color:#FFFFFF;
 		font-size:0.9em;
 		width:150px;
@@ -111,7 +120,7 @@ ul {
 		top:80px;
 		/*left:10px;*/
 			min-width:240px;
-		margin: 0px auto 150px;
+		margin: 0px auto 100px;
 		padding: -40px 15px;
 		width: 80%;
 		-moz-border-radius:10px;
@@ -138,30 +147,25 @@ ul {
 	#welcometext {
 		position:fixed;
 		top:90px;
-		left:75px;
-	}
-	
-	#welcometext img {
-		height:auto;
-		width:39%;
+		left:85px;
 	}
 	
 	#rollergirlimg {
 	position:fixed;
 	top:50px;
-	left:200px;
+	left:220px;
 	}
 	
 	#rollergirlimg img {
-		height:auto;
-		width:70%;
+		height:277px;
+		width:177px;
 	}
 	
 	
 	#freshmeattxt {
 		position:fixed;
 		top:115px;
-		left:80px;
+		left:85px;
 		color:#FFFFFF;
 		font-size:0.9em;
 		width:190px;
@@ -172,7 +176,7 @@ ul {
 	
 	#navitems {
 		position:fixed;
-		top:80px;
+		top:70px;
 		left:80px;
 		color:#FFFFFF;
 		font-size:0.9em;
@@ -214,6 +218,14 @@ ul {
 	margin-right:auto;
 	}
 
+}
+
+#navitems li {
+	/*line-height:50px;*/
+	margin-left:-10px;
+	width:150px;
+	margin-top:-10px;
+	margin-bottom: 20px;
 }
 
 .ui-bar-a .ui-link-inherit {

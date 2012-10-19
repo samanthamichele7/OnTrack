@@ -14,19 +14,25 @@
 	
     <div data-role="page" data-theme="a">
 		
-        <a href="menu.html"><div id="logoheader"></div><div id="iconstrip"></div></a><!--places logo and strip at top and links to menu.html-->
+        <a href="menu.html"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.html-->
+        
+        <div id="topheadericon">
+        	<a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-mini="true" data-inline="true">Back</a>
+            <a href="menu.html" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
+        </div>
+        
 		<div data-role="header" data-position="inline">
 		</div><!--end of header -->
 
         <div data-role="content" data-theme="a" id="pagecontent"><!--container with transparent grey background-->
         
-            <h2>Skills List</h2>
-            <p>In order to pass the skills test, you must be able to perform all of these skills.</p>
+           	<img src="images/skillstesttxt.png" width="118" height="30"><br>
+            In order to pass the skills test, you must be able to perform all of these skills.<br><br>
 
                 <ul data-role="listview" data-filter="true" >
     
                     <div  data-mini="true" data-theme="a" data-inline="true">
-                        <ul data-role="list-divider" data-theme="a">Basic Skating Skills	
+                        <ul data-role="list-divider" data-theme="a"><h3>Basic Skating Skills</h3>	
                             <li><label><input type="checkbox" name="checkbox-0" /> Crossovers </label></li>
                             <li><label><input type="checkbox" name="checkbox-1" /> T-Stop </label></li>
                             <li><label><input type="checkbox" name="checkbox-2" /> One-foot glides down straightaways </label></li>
@@ -35,7 +41,7 @@
                     </div><!--first listview-->
         
                     <div  data-mini="true" data-theme="a" >
-                        <ul data-role="list-divider" data-theme="a">Falls
+                        <ul data-role="list-divider" data-theme="a"><h3>Falls</h3>
                             <li><label><input type="checkbox" name="checkbox-4" /> Single Knee Falls </label></li>
                             <li><label><input type="checkbox" name="checkbox-5" /> Double Knee Falls </label></li>
                             <li><label><input type="checkbox" name="checkbox-6" /> Figure 4 / Baseball Slide </label></li>
