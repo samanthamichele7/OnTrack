@@ -85,6 +85,11 @@ ul {
 		left:20px;
 	}
 		
+	#welcometext img {
+		height:26px;
+		width:125px;
+	}
+		
 	#rollergirlimg {
 		position:absolute;
 		top:55px;
@@ -150,6 +155,11 @@ ul {
 		left:85px;
 	}
 	
+	#welcometext img {
+		height:26px;
+		width:125px;
+	}
+	
 	#rollergirlimg {
 	position:fixed;
 	top:50px;
@@ -207,6 +217,7 @@ ul {
 
 @media screen and (max-width: 280px) {
 /* LANDSCAPE VIEW */ 
+	
 	#rollergirlimg {
 	width:0;
 	height:0;
@@ -219,6 +230,70 @@ ul {
 	}
 
 }
+
+@media screen and (min-width: 760px) {
+/* TABLET */ 
+		
+	#maincontent {
+		max-width:768px;
+		width: 768px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	#welcometext {
+		position:fixed;
+		top:180px;
+		left:85px;
+	}
+	
+	#welcometext img {
+		height:52px;
+		width:250px;
+	}
+	
+	#rollergirlimg {
+	position:fixed;
+	top:50px;
+	left:220px;
+	}
+	
+	#rollergirlimg img {
+		height:650px;
+		width:415px;
+	}
+	
+	
+	#freshmeattxt {
+		position:fixed;
+		top:240px;
+		left:85px;
+		color:#FFFFFF;
+		font-size:1.1em;
+		width:270px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight:200;
+		line-height:140%;
+	}
+	
+	#fbooklogo img {
+		height:32px;
+		width:180px;
+	}
+	
+	#navitems {
+		position:fixed;
+		top:190px;
+		left:150px;
+		color:#FFFFFF;
+		font-size:1.1em;
+		width:270px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight:200;
+		line-height:140%;
+	}
+}
+
 
 #navitems li {
 	/*line-height:50px;*/
