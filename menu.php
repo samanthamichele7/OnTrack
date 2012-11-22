@@ -1,4 +1,8 @@
-<?php include('header.php');?>
+<?php 
+include('auth_session.php');
+include('header.php');
+
+?>
 
     <div data-role="page" id="welcome" data-theme="a">
     
