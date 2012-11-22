@@ -1,4 +1,4 @@
-<?php namespace App\DB
+<?php namespace App\DB;
 
 $config = array(
 	'username' => 'ontrackadmin',
@@ -14,7 +14,6 @@ function connect($config)
 						$config['password']);
 
 		$conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-
 		return $conn;
 	} catch(Exception $e) {
 		return false;
