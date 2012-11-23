@@ -3,8 +3,8 @@
         $username = trim($_POST['username']);
         $password = trim($_POST['pwd']);
         $retyped = trim($_POST['conf_pwd']);
-        $userfile = '../OnTrack/encrypted.txt';
-        require_once('includes/register_user_text.inc.php');
+        //$userfile = '../OnTrack/encrypted.txt';
+        require_once('includes/register_user_pdo.inc.php');
 
     }
 
@@ -25,16 +25,14 @@
 
                 <h1>Register User</h1>
                     <?php
-                    if (isset($result)) {
+                    if (isset($success)){
+                        echo"<p>$success</p>";
+                    } elseif (isset($errors) && !empty($errors)){
                         echo '<ul>';
-                        if (!empty($errors)){
-                            foreach ($errors as $item) {
-                                echo "<li>$item</li>";
-                            }
-                        } else{
-                            echo "<li>$result</li>";
-                        }                        
-                        echo'</ul>';
+                        foreach ($errors as $error) {
+                            echo "<li>$error</li>";
+                        }
+                        echo '</ul>';
                     }
                     ?>
 

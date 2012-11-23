@@ -3,12 +3,10 @@
         if (isset($_POST['login'])) {
             session_start();
             $username = trim($_POST['username']);
-            $password = sha1($username . $_POST['pwd']);
-            //temp location of usernames and passwords
-            $userlist = '../OnTrack/encrypted.txt';
+            $password = trim($_POST['pwd']);
             //location to redirect on success
             $redirect ='http://ontrackrollerderby.com/menu.php';
-            require_once('includes/authenticate.inc.php');
+            require_once('includes/authenticate_pdo.inc.php');
         }
 
         require('header.php');
