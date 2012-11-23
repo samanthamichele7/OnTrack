@@ -1,5 +1,5 @@
 <?php 
-include('auth_session.php');
+include('includes/auth_session.inc.php');
 include('header.php');
 
 ?>
@@ -24,7 +24,13 @@ include('header.php');
                         <li><a href="skills.php" data-role="button" data-mini="true" data-icon="arrow-r">Skills Test</a></li>
                         <li><a href="endurance.php" data-role="button" data-mini="true" data-icon="arrow-r">Endurance Test</a></li>
                     </ul>
+
+                    <form id="logoutForm" method="post" action"" data-ajax="false">
+                    <input type="submit" name="logout" id="logout" value"Log out">
+                    </form>
+
           		</div><!--end of navitems-->
+                
         	</div><!--end of maincontent-->
         </div><!--end of content-->
         

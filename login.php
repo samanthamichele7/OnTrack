@@ -2,10 +2,10 @@
     $error = '';
         if (isset($_POST['login'])) {
             session_start();
-            $username = $_POST['username'];
-            $password = $_POST['pwd'];
+            $username = trim($_POST['username']);
+            $password = sha1($username . $_POST['pwd']);
             //temp location of usernames and passwords
-            $userlist = '../OnTrack/userlist.txt';
+            $userlist = '../OnTrack/encrypted.txt';
             //location to redirect on success
             $redirect ='http://ontrackrollerderby.com/menu.php';
             require_once('includes/authenticate.inc.php');
@@ -31,7 +31,7 @@
                         echo"<p>$error</p>";
                         }
                 ?>
-                <form action="" method="post" id="form1" data-ajax="false">
+                <form action="" method="post" id="login_form" data-ajax="false">
                     <p>
                         <label for="username">Username: </label>
                         <input type="text" name="username" id="username">
