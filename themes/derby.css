@@ -21,14 +21,6 @@ ul {
 	margin:0;
 }
 
-#footerheaderoverride {
-	position:absolute;
-	bottom:0;	
-	width:100%;
-	border-left:none;
-	opacity: .5;
-	filter: Alpha(Opacity=50);
-}
 
 #logoheader {
 	position:fixed;
@@ -89,8 +81,8 @@ ul {
 	
 	#welcometext {
 		position:fixed;
-		top:135px;
-		left:20px;
+		top:125px;
+		left:15px;
 	}
 		
 	#welcometext img {
@@ -106,10 +98,10 @@ ul {
 	
 	#freshmeattxt {
 		position:fixed;
-		top:160px;
+		top:170px;
 		left:20px;
 		color:#FFFFFF;
-		font-size:0.8em;
+		font-size:0.85em;
 		width:150px;
 		font-family: Helvetica, Arial, sans-serif;
 		font-weight:200;
@@ -118,11 +110,11 @@ ul {
 	
 	#navitems {
 		position:fixed;
-		top:135px;
-		left:10px;
+		top:150px;
+		left:15px;
 		color:#FFFFFF;
-		font-size:0.9em;
-		width:150px;
+		font-size:0.85em;
+		width:155px;
 		font-family: Helvetica, Arial, sans-serif;
 		font-weight:200;
 		line-height:140%;
@@ -159,19 +151,19 @@ ul {
 	
 	#welcometext {
 		position:fixed;
-		top:90px;
-		left:85px;
+		top:65px;
+		left:50px;
 	}
 	
 	#welcometext img {
-		height:26px;
-		width:125px;
+		height:36px;
+		width:175px;
 	}
 	
 	#rollergirlimg {
 	position:fixed;
 	top:50px;
-	left:220px;
+	left:250px;
 	}
 	
 	#rollergirlimg img {
@@ -194,11 +186,11 @@ ul {
 	
 	#navitems {
 		position:fixed;
-		top:70px;
-		left:80px;
+		top:95px;
+		left:50px;
 		color:#FFFFFF;
 		font-size:0.9em;
-		width:150px;
+		width:225px;
 		font-family: Helvetica, Arial, sans-serif;
 		font-weight:200;
 		line-height:140%;
@@ -291,8 +283,8 @@ ul {
 	
 	#navitems {
 		position:fixed;
-		top:190px;
-		left:150px;
+		top:230px;
+		left:90px;
 		color:#FFFFFF;
 		font-size:1.1em;
 		width:270px;
