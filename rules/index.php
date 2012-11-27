@@ -1,4 +1,14 @@
-<?php include('header.php');?>
+<?php 
+require('../includes/access.inc.php');
+include('../header.php');
+
+if (!userIsLoggedIn())
+{
+  include 'login.php';
+  exit();
+}
+
+?>
 
 <!-- Question 1 -->
 	
