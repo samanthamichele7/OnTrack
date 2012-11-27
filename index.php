@@ -11,10 +11,17 @@
             <div id="maincontent">
                 <div id="rollergirlimg"><img src="images/rollergirl.png" /></div><!--end of rollergirl-->
                 <div id="welcometext"><img src="images/welcome.png" /></div><!--end of welcome banner-->
-                <div id="freshmeattxt"><p>Are you a fresh meat derby skater? Passing the skills test is hard.  Use this app to track your progress, and you'll be on the A-team in no time!</p>
-                <a href="menu.php"><img src="images/facebooklogo.png" width="125" height="25"></a>
-                </div><!--end of freshmeattxt-->
+                <div id="navitems"><p>Are you a fresh meat derby skater? Passing the skills test is hard.  Use this app to track your progress, and you'll be on the A-team in no time!</p>
+                    <ul>
+                        <li><a href="menu/" data-role="button" data-mini="true" data-ajax="false">Log In</a></li>
+                        <li><a href="register.php" data-role="button" data-mini="true" data-ajax="false">Register</a></li>
+                        
+                    </ul>
+
+                </div><!--end of navitems-->
+                
             </div><!--end of maincontent-->
+           
         </div><!--end of content-->
             
 	</div><!--end of page-->

@@ -1,17 +1,4 @@
-<?php 
-    if(isset($_POST['register'])) {
-        $username = trim($_POST['username']);
-        $password = trim($_POST['pwd']);
-        $retyped = trim($_POST['conf_pwd']);
-        //$userfile = '../OnTrack/encrypted.txt';
-        require_once('includes/register_user_pdo.inc.php');
-
-    }
-
-        require('header.php');
-
-?>
-
+<?php include('header.php');?>
 		        
     <div data-role="page" id="welcome" data-theme="a">
 
@@ -20,41 +7,22 @@
         <div data-role="header" data-position="inline">
         </div><!--end of header -->
             
-        <div data-role="content" data-theme="a" id="pagecontent">
+        <div data-role="content" data-theme="a">
             <div id="maincontent">
+                <div id="rollergirlimg"><img src="images/rollergirl.png" /></div><!--end of rollergirl-->
+                <div id="welcometext"><img src="images/welcome.png" /></div><!--end of welcome banner-->
+                <div id="navitems"><p>Registration is disabled for now.  In the meantime, please log in with the following information:</p>
+                    <ul>
+                        <li>Username: test@example.com</li>
+                        <li>Password: password</li>
+                    </ul>
 
-                <h1>Register User</h1>
-                    <?php
-                    if (isset($success)){
-                        echo"<p>$success</p>";
-                    } elseif (isset($errors) && !empty($errors)){
-                        echo '<ul>';
-                        foreach ($errors as $error) {
-                            echo "<li>$error</li>";
-                        }
-                        echo '</ul>';
-                    }
-                    ?>
+                    <a href="login.php" data-role="button" data-mini="true" data-ajax="false">Log In</a>
 
+                </div><!--end of navitems-->
                 
-                <form action="" method="post" id="register_form" data-ajax="false">
-                  <p>
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" id="username">
-                  </p>
-                  <p>
-                    <label for="pwd">Password:</label>
-                    <input type="password" name="pwd" id="pwd">
-                  </p>
-                  <p>
-                    <label for="conf_pwd">Retype Password:</label>
-                    <input type="password" name="conf_pwd" id="conf_pwd">
-                  </p>
-                  <p>
-                    <input type="submit" name="register" id="register" value="Submit">
-                  </p>
-                </form>
             </div><!--end of maincontent-->
+           
         </div><!--end of content-->
             
 	</div><!--end of page-->
