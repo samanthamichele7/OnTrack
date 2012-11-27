@@ -67,9 +67,9 @@
 		<div data-role="footer" data-theme="a" data-position="fixed">		
             <div data-role="navbar">
                 <ul>
-                    <li><a href="rules.php">Rules</a></li>
+                    <li><a href="../rules/">Rules</a></li>
                     <li class="ui-disabled"><a href="skills.php">Skills</a></li>
-                    <li><a href="endurance.php">Endurance</a></li>
+                    <li><a href="../endurance/">Endurance</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div><!-- /footer -->

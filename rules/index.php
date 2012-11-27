@@ -1,23 +1,35 @@
-<?php 
-require('../includes/access.inc.php');
-include('../header.php');
+ <?php include_once $_SERVER['DOCUMENT_ROOT'] .
+    '/includes/helpers.inc.php';
 
-if (!userIsLoggedIn())
-{
-  include 'login.php';
-  exit();
-}
 
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>On Track Roller Derby Skills App</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" /> 
+        <link rel="stylesheet" href="../themes/derby.css" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" type="text/css" href="../themes/simpledialog2.css" /> <!---Stylesheet for SimpleDialog2 plugin http://dev.jtsage.com/jQM-SimpleDialog/demos2/index.html -->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        <script type="text/javascript" src="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog2.min.js"></script> <!---Code for SimpleDialog2 plugin http://dev.jtsage.com/jQM-SimpleDialog/demos2/index.html -->
+    </head>
+<body>
+
+
 
 <!-- Question 1 -->
 	
     <div data-role="page" data-theme="a" id="question1">
 		
-		<a href="menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
+		<a href="../menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to ../menu.php-->
         
         <div id="topheadericon">
-        	<a href="menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
+        	<a href="../menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
             	<a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-mini="true" data-inline="true">Back</a>            
         </div>
         
@@ -25,7 +37,7 @@ if (!userIsLoggedIn())
         </div><!--end of header -->
 
 	<div data-role="content" data-theme="a" id="pagecontent"><!--container with transparent grey background-->				
-              <img src="images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
+              <img src="../images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
               <h3>Which part of the body is considered an illegal blocking zone?</h3>
                     <ul>
                         <li>a. Chest</li>
@@ -76,8 +88,8 @@ if (!userIsLoggedIn())
                 <div data-role="navbar">
                     <ul>
                         <li class="ui-disabled"><a href="rules.php">Rules</a></li>
-                        <li><a href="skills.php">Skills</a></li>
-                        <li><a href="endurance.php">Endurance</a></li>
+                        <li><a href="../skills/">Skills</a></li>
+                        <li><a href="../endurance/">Endurance</a></li>
                     </ul>
                 </div><!-- /navbar -->
         </div><!-- /footer -->
@@ -89,10 +101,10 @@ if (!userIsLoggedIn())
     
     <div data-role="page" data-theme="a" id="question2">
 
-        <a href="menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
+        <a href="../menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to ../menu.php-->
         
         <div id="topheadericon">
-            <a href="menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
+            <a href="../menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
                 <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-mini="true" data-inline="true">Back</a>            
         </div>
         
@@ -100,7 +112,7 @@ if (!userIsLoggedIn())
         </div><!--end of header -->
 
     <div data-role="content" data-theme="a" id="pagecontent"><!--container with transparent grey background-->  
-              <img src="images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
+              <img src="../images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
           <h3>How many timeouts does each team have per game?</h3>              
             <ul>                    
                 <li>a. One</li>                 
@@ -149,8 +161,8 @@ if (!userIsLoggedIn())
                 <div data-role="navbar">
                     <ul>
                         <li class="ui-disabled"><a href="rules.php">Rules</a></li>
-                        <li><a href="skills.php">Skills</a></li>
-                        <li><a href="endurance.php">Endurance</a></li>
+                        <li><a href="../skills/">Skills</a></li>
+                        <li><a href="../endurance/">Endurance</a></li>
                     </ul>
                 </div><!-- /navbar -->
         </div><!-- /footer -->
@@ -161,10 +173,10 @@ if (!userIsLoggedIn())
     
     <div data-role="page" data-theme="a" id="question3">
         
-        <a href="menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
+        <a href="../menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to ../menu.php-->
         
         <div id="topheadericon">
-            <a href="menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
+            <a href="../menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
                 <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-mini="true" data-inline="true">Back</a>            
         </div>
         
@@ -172,7 +184,7 @@ if (!userIsLoggedIn())
         </div><!--end of header -->
 
     <div data-role="content" data-theme="a" id="pagecontent"><!--container with transparent grey background-->          
-              <img src="images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
+              <img src="../images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
           <h3>What is the referee whistle signal for a major penalty?</h3>          
             <ul>                    
                 <li>a. No whistle signal</li>                   
@@ -219,8 +231,8 @@ if (!userIsLoggedIn())
                 <div data-role="navbar">
                     <ul>
                         <li class="ui-disabled"><a href="rules.php">Rules</a></li>
-                        <li><a href="skills.php">Skills</a></li>
-                        <li><a href="endurance.php">Endurance</a></li>
+                        <li><a href="../skills/">Skills</a></li>
+                        <li><a href="../endurance/">Endurance</a></li>
                     </ul>
                 </div><!-- /navbar -->
         </div><!-- /footer -->
@@ -231,10 +243,10 @@ if (!userIsLoggedIn())
     
     <div data-role="page" data-theme="a" id="question4">
         
-        <a href="menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
+        <a href="../menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to ../menu.php-->
         
         <div id="topheadericon">
-            <a href="menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
+            <a href="../menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
                 <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-mini="true" data-inline="true">Back</a>            
         </div>
         
@@ -242,7 +254,7 @@ if (!userIsLoggedIn())
         </div><!--end of header -->
 
     <div data-role="content" data-theme="a" id="pagecontent"><!--container with transparent grey background-->          
-              <img src="images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
+              <img src="../images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
           <h3>True or False?  A Jammer must stay in-bounds to remain Lead Jammer.</h3>  
                     <div class="center-button">
                         <a href="#" id="opendialog4" data-role="button" data-inline="true">True</a>
@@ -279,8 +291,8 @@ if (!userIsLoggedIn())
                 <div data-role="navbar">
                     <ul>
                         <li class="ui-disabled"><a href="rules.php">Rules</a></li>
-                        <li><a href="skills.php">Skills</a></li>
-                        <li><a href="endurance.php">Endurance</a></li>
+                        <li><a href="../skills/">Skills</a></li>
+                        <li><a href="../endurance/">Endurance</a></li>
                     </ul>
                 </div><!-- /navbar -->
         </div><!-- /footer -->
@@ -291,10 +303,10 @@ if (!userIsLoggedIn())
     
     <div data-role="page" data-theme="a" id="question5">
         
-        <a href="menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
+        <a href="../menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to ../menu.php-->
         
         <div id="topheadericon">
-            <a href="menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
+            <a href="../menu.php" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
                 <a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" data-mini="true" data-inline="true">Back</a>            
         </div>
         
@@ -302,7 +314,7 @@ if (!userIsLoggedIn())
         </div><!--end of header -->
 
     <div data-role="content" data-theme="a" id="pagecontent"><!--container with transparent grey background-->          
-              <img src="images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
+              <img src="../images/rulestesttxt.png" width="112" height="30" alt="Rules Test">
           <h3>True or False?  If a skater is illegally blocked outside of the engagement zone she may legally counter-block.</h3>   
                     <div class="center-button">
                         <a href="#" id="opendialog5a" data-role="button" data-inline="true">True</a>
@@ -341,8 +353,8 @@ if (!userIsLoggedIn())
                 <div data-role="navbar">
                     <ul>
                         <li class="ui-disabled"><a href="rules.php">Rules</a></li>
-                        <li><a href="skills.php">Skills</a></li>
-                        <li><a href="endurance.php">Endurance</a></li>
+                        <li><a href="../skills/">Skills</a></li>
+                        <li><a href="../endurance/">Endurance</a></li>
                     </ul>
                 </div><!-- /navbar -->
         </div><!-- /footer -->
