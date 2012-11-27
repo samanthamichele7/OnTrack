@@ -21,6 +21,14 @@ ul {
 	margin:0;
 }
 
+#footerheaderoverride {
+	position:absolute;
+	bottom:0;	
+	width:100%;
+	border-left:none;
+	opacity: .5;
+	filter: Alpha(Opacity=50);
+}
 
 #logoheader {
 	position:fixed;
