@@ -18,19 +18,6 @@ if (isset($_POST['skills']))
     {
       include $_SERVER['DOCUMENT_ROOT'] . '/includes/db.inc.php';
 
-      // Pull user_to_skill to check against selected values
-      // try
-      // {
-      //   $sql = "SELECT * FROM user_to_skill WHERE userid = '{$_POST['id']}'";
-      //   $s = $pdo->prepare($sql);
-      //   $s->execute();
-      // }
-      // catch (PDOException $e) {
-      //   exit('Error fetching data, because: ' . $e->getMessage()); 
-      // }
-
-      // $result = $s->fetchAll();
-
       try
         {
           $sql = "DELETE FROM user_to_skill WHERE userid = '{$_POST['id']}'";
@@ -66,6 +53,7 @@ if (isset($_POST['skills']))
 
 
 // Pull user id for query
+
 try
   {
     $sql = "SELECT id FROM users WHERE email ='{$_SESSION['email']}' ";
@@ -85,6 +73,7 @@ try
   $id = $row['id'];
 
 // Get list of skills assigned to this user
+  
   try
   {
     $sql = 'SELECT skillid FROM user_to_skill WHERE userid =' . $id;
