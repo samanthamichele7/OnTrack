@@ -39,8 +39,9 @@
 	 <form action="" method="post" data-ajax="false">
       
       <fieldset>
-        <br/>
-        <?php for ($i = 0; $i < count($skills); $i++): ?>
+      <div data-role="collapsible" data-collapsed="false">
+      <h3>Basic Skating Skills</h3>
+        <?php for ($i = 0; $i < 8; $i++): ?>
           <div>
             <label for="skill<?php echo $i; ?>"><input type="checkbox"
               name="skills[]" id="skill<?php echo $i; ?>"
@@ -53,12 +54,85 @@
               
           </div>
         <?php endfor; ?>
+        </div><!--end of basic skating skills -->
+
+        <div data-role="collapsible" data-collapsed="true">
+        <h3>Falls</h3>
+        <?php for ($i = 8; $i < 13; $i++): ?>
+          <div>
+            <label for="skill<?php echo $i; ?>"><input type="checkbox"
+              name="skills[]" id="skill<?php echo $i; ?>"
+              value="<?php htmlout($skills[$i]['id']); ?>"<?php
+              if ($skills[$i]['selected'])
+              {
+                echo ' checked';
+              }
+              ?>><?php htmlout($skills[$i]['description']); ?></label>
+              
+          </div>
+        <?php endfor; ?>
+        </div><!--end of falls -->
+
+        <div data-role="collapsible" data-collapsed="true">
+        <h3>Balance and Agility</h3>
+        <?php for ($i = 13; $i < 20; $i++): ?>
+          <div>
+            <label for="skill<?php echo $i; ?>"><input type="checkbox"
+              name="skills[]" id="skill<?php echo $i; ?>"
+              value="<?php htmlout($skills[$i]['id']); ?>"<?php
+              if ($skills[$i]['selected'])
+              {
+                echo ' checked';
+              }
+              ?>><?php htmlout($skills[$i]['description']); ?></label>
+              
+          </div>
+        <?php endfor; ?>
+        </div><!--end of balance and agility -->
+
+        <div data-role="collapsible" data-collapsed="true">
+        <h3>Skating With Others</h3>
+        <?php for ($i = 20; $i < 29; $i++): ?>
+          <div>
+            <label for="skill<?php echo $i; ?>"><input type="checkbox"
+              name="skills[]" id="skill<?php echo $i; ?>"
+              value="<?php htmlout($skills[$i]['id']); ?>"<?php
+              if ($skills[$i]['selected'])
+              {
+                echo ' checked';
+              }
+              ?>><?php htmlout($skills[$i]['description']); ?></label>
+              
+          </div>
+        <?php endfor; ?>
+        </div><!--end of skating with others -->
+
+        <div data-role="collapsible" data-collapsed="true">
+        <h3>Blocking</h3>
+        <?php for ($i = 29; $i < 33; $i++): ?>
+          <div>
+            <label for="skill<?php echo $i; ?>"><input type="checkbox"
+              name="skills[]" id="skill<?php echo $i; ?>"
+              value="<?php htmlout($skills[$i]['id']); ?>"<?php
+              if ($skills[$i]['selected'])
+              {
+                echo ' checked';
+              }
+              ?>><?php htmlout($skills[$i]['description']); ?></label>
+              
+          </div>
+        <?php endfor; ?>
+        </div><!--end of blocking -->
+
+
+
+
       </fieldset>
-      <div>
+      <div class="center-button">
         <input type="hidden" name="id" value="<?php
             htmlout($id); ?>">
-        <input type="submit" value="Save">
-      </div>
+        <input type="submit" value="Save" data-inline="true">
+      </div><!--end center-button-->
     </form>
 
 
