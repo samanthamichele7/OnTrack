@@ -17,26 +17,50 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/db.inc.php';
 if (isset($_POST['skills']))
     {
       include $_SERVER['DOCUMENT_ROOT'] . '/includes/db.inc.php';
+
+      // Pull user_to_skill to check against selected values
+      // try
+      // {
+      //   $sql = "SELECT * FROM user_to_skill WHERE userid = '{$_POST['id']}'";
+      //   $s = $pdo->prepare($sql);
+      //   $s->execute();
+      // }
+      // catch (PDOException $e) {
+      //   exit('Error fetching data, because: ' . $e->getMessage()); 
+      // }
+
+      // $result = $s->fetchAll();
+
+      try
+        {
+          $sql = "DELETE FROM user_to_skill WHERE userid = '{$_POST['id']}'";
+          $s = $pdo->prepare($sql);
+          $s->bindValue(':id', $_POST['id']);
+          $s->execute();
+        }
+    catch (PDOException $e)
+        {
+          $error = 'Error removing obsolete skill entries.';
+          include 'error.html.php';
+          exit();
+        }
+
       foreach ($_POST['skills'] as $skill)
       {
         try
         {
-          $sql = 'INSERT INTO user_to_skill SET
-              userid = :userid,
-              skillid = :skillid';
+          $sql = 'INSERT INTO user_to_skill (userid, skillid) VALUES (:userid,:skillid)';
           $s = $pdo->prepare($sql);
           $s->bindValue(':userid', $_POST['id']);
           $s->bindValue(':skillid', $skill);
           $s->execute();
         }
         catch (PDOException $e)
-        {
-          $error = 'Error assigning selected skills to user.';
-          include 'error.html.php';
-          exit();
+        { 
+         exit('Connection error, because: ' . $e->getMessage()); 
         }
       }
-        header('Location: .');
+      header('Location: index.php');
         exit();
   }
 

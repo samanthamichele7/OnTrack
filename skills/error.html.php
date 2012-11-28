@@ -6,7 +6,7 @@
   </head>
   <body>
     <p>
-      <?php echo $error; ?>
+      <?php echo $error;?>
     </p>
   </body>
 </html>
