@@ -35,7 +35,6 @@
            	<img src="../images/skillstesttxt.png" width="118" height="30"><br>
             In order to pass the skills test, you must be able to perform all of these skills.<br><br>
 
-
 	 <form action="" method="post" data-ajax="false">
       
       <fieldset>
@@ -132,6 +131,7 @@
         <input type="hidden" name="id" value="<?php
             htmlout($id); ?>">
         <input type="submit" value="Save" data-inline="true">
+        <input type="submit" value="Reset" name="reset" data-inline="true">
       </div><!--end center-button-->
     </form>
 

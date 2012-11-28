@@ -13,6 +13,54 @@ if (!userIsLoggedIn())
 include $_SERVER['DOCUMENT_ROOT'] . '/includes/db.inc.php';
 
 
+// Reset all values if "reset" button is pushed
+
+if (isset($_POST['reset']))
+    {
+      include $_SERVER['DOCUMENT_ROOT'] . '/includes/db.inc.php';
+
+
+  // Pull User ID
+    try
+    {
+      $sql = "SELECT id FROM users WHERE email ='{$_SESSION['email']}' ";
+      $s = $pdo->prepare($sql);
+      $s->bindValue(':id', $_POST['id']);
+      $s->execute();
+    }
+    catch (PDOException $e)
+    {
+      $error = 'Error fetching user details.';
+      include 'error.html.php';
+      exit();
+    }
+
+    $row = $s->fetch();
+
+    $id = $row['id'];
+
+
+    // Delete all entries for user from database
+
+    try
+        {
+          $sql = "DELETE FROM user_to_skill WHERE userid = '{$id}'";
+          $s = $pdo->prepare($sql);
+          $s->bindValue(':id', $_POST['id']);
+          $s->execute();
+        }
+    catch (PDOException $e)
+        {
+          $error = 'Error resetting skills.';
+          include 'error.html.php';
+          exit();
+        }
+
+
+        header('Location: index.php');
+        exit();
+}
+
 
 if (isset($_POST['skills']))
     {
@@ -47,6 +95,7 @@ if (isset($_POST['skills']))
          exit('Connection error, because: ' . $e->getMessage()); 
         }
       }
+
       header('Location: index.php');
         exit();
   }
