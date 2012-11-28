@@ -1,3 +1,19 @@
+<?php 
+
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/access.inc.php';
+
+    if(isset($_POST['register'])) {
+        $name = trim($_POST['name']);
+        $email = trim($_POST['email']);
+        $password = trim($_POST['pwd']);
+        $retyped = trim($_POST['conf_pwd']);
+        
+        require_once('includes/register_user_pdo.inc.php');
+
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,19 +37,51 @@
         <div data-role="header" data-position="inline">
         </div><!--end of header -->
             
-        <div data-role="content" data-theme="a">
+        <div data-role="content" data-theme="a" id="pagecontent">
             <div id="maincontent">
-                <div id="rollergirlimg"><img src="images/rollergirl.png" /></div><!--end of rollergirl-->
-                <div id="welcometext"><img src="images/welcome.png" /></div><!--end of welcome banner-->
-                <div id="navitems"><p>Registration is disabled for now.  In the meantime, please log in with the following information:</p>
-                    <ul>
-                        <li>Username: test@example.com</li>
-                        <li>Password: password</li>
-                    </ul>
+               
+               <h1>Register User</h1>
+                    <?php
+                    if (isset($success)){
+                        echo "<p>$success</p>";
+                    } elseif (isset($errors) && !empty($errors)){
+                        echo '<ul>';
+                        foreach ($errors as $error) {
+                            echo "<li>$error</li>";
+                        }
+                        echo '</ul>';
+                    }
+                    ?>
 
-                    <a href="login.php" data-role="button" data-mini="true" data-ajax="false">Log In</a>
+                
+                <form action="" method="post" id="register_form" data-ajax="false">
+                  <p>
+                    <label for="username">Name:</label>
+                    <input type="text" name="name" id="username">
+                  </p>
+                  <p>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                 </p>
+                  <p>
+                    <label for="pwd">Password:</label>
+                    <input type="password" name="pwd" id="pwd">
+                  </p>
+                  <p>
+                    <label for="conf_pwd">Retype Password:</label>
+                    <input type="password" name="conf_pwd" id="conf_pwd">
+                  </p>
+                  <p>
+                    <input type="submit" name="register" id="register" value="Submit">
+                  </p>
+                  <?php
+                  if (isset($success)){
+                    echo '<a href="/menu/" data-role="button" data-ajax="false">Log In</a>';
+                  }
+                  ?>
+                </form> 
 
-                </div><!--end of navitems-->
+
                 
             </div><!--end of maincontent-->
            
