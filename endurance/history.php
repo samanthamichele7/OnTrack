@@ -32,7 +32,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/access.inc.php';
 
             try
                 {
-                  $result = $pdo->query("SELECT record_date, time, laps FROM endurance WHERE userid = {$id} ORDER BY record_date");
+                  $result = $pdo->query("SELECT record_date, time, laps FROM endurance WHERE userid = {$id} ORDER BY record_date DESC");
                 }
                 catch (PDOException $e)
                 {

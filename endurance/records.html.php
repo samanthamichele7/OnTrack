@@ -37,7 +37,7 @@
         
         <div data-role="content" data-theme="a" id="pagecontent"><!--container with transparent grey background-->
 
-            <div class="table">
+            <div class="endurance-history">
                 <table data-role="table" id="my-table" class="table-stripe" data-mode="reflow">
                     
 
@@ -77,7 +77,7 @@
                  </tbody>
              </table>
 
-            </div>
+            </div> <!--end endurance history -->
 
             <div class="center-button">
 

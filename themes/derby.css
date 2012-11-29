@@ -885,7 +885,9 @@ a.ui-link-inherit {
 
 /* style endurance table 
 -----------------------------------------------------------------------------------------------------------*/
-#my-table { width:100%; }
+#my-table { 
+	width:100%;
+}
 
 
 /* Add alternating row stripes */
@@ -898,3 +900,6 @@ a.ui-link-inherit {
 .table-stripe tbody tr:last-child {
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
+
+
+
