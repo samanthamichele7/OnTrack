@@ -5,6 +5,7 @@ include('includes/helpers.inc.php');
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="favicon.png" rel="SHORTCUT ICON">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>On Track Roller Derby Skills App</title>
@@ -21,7 +22,7 @@ include('includes/helpers.inc.php');
             
     <div data-role="page" id="welcome" data-theme="a">
 
-    <div id="logoheader"></div><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
+    <a href="../index.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
         
         <div data-role="header" data-position="inline">
         </div><!--end of header -->
@@ -47,7 +48,7 @@ include('includes/helpers.inc.php');
                     <input type="submit" value="Log in">
                   
                 </form>
-
+                <a href="../index.php" data-role="button" data-inline="false" data-mini="true">Cancel</a>
               </div><!--end of navitems-->
                 
             </div><!--end of maincontent-->

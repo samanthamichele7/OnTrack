@@ -7,6 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="favicon.ico" rel="SHORTCUT ICON">
         <title>On Track Roller Derby Skills App</title>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" /> 
         <link rel="stylesheet" href="../themes/derby.css" />

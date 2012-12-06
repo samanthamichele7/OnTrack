@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="../favicon.ico" rel="SHORTCUT ICON">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>On Track Roller Derby Skills App</title>

@@ -19,6 +19,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/access.inc.php';
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="favicon.ico" rel="SHORTCUT ICON">
         <title>On Track Roller Derby Skills App</title>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" /> 
         <link rel="stylesheet" href="themes/derby.css" />
@@ -32,7 +33,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/access.inc.php';
 		        
     <div data-role="page" id="welcome" data-theme="a">
 
-		<div id="logoheader"></div><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
+		<a href="../index.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
         
         <div data-role="header" data-position="inline">
         </div><!--end of header -->
@@ -73,6 +74,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/access.inc.php';
                   </p>
                   <p>
                     <input type="submit" name="register" id="register" value="Submit">
+                  </p>
+                  <p>
+                  	<a href="../index.php" data-role="button" data-inline="false" data-mini="true">Cancel</a>
                   </p>
                   <?php
                   if (isset($success)){

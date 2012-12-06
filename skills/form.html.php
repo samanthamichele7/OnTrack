@@ -7,7 +7,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>On Track Roller Derby Skills App</title>
+		<link href="favicon.ico" rel="SHORTCUT ICON">
+        <title>On Track Roller Derby Skills App</title>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile.structure-1.1.1.min.css" /> 
 		<link rel="stylesheet" href="../themes/derby.css" />
 		<link rel="stylesheet" href="../style.css" />
@@ -20,7 +21,7 @@
 
  <div data-role="page" data-theme="a">
 
-        <a href="../menu.php"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
+        <a href="../menu/"><div id="logoheader"></div></a><div id="iconstrip"></div><!--places logo and strip at top and links to menu.php-->
         
         <div id="topheadericon">
         	<a href="../menu/" data-role="button" data-icon="home" data-iconpos="notext" data-mini="true" data-inline="true">Home</a>
